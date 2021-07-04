@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="idCard.css">
+    <title>ID Card</title>
+    <script type="text/javascript">
+        function printDiv(value) {
+            var backup=document.body.innerHTML;
+            var printContents = document.getElementById(value).innerHTML;
+            document.body.innerHTML=printContents;
+            window.print();
+        }
+    </script>
+<!--     
+    So lets start -->
+</head>
+<body>
+        <div class="container">
+            <button id="front-button" onclick="printDiv('padding')" class="front-button">front</button>
+            <div id="padding" class="padding">
+                <div id="front-top" class="font">
+                    <div  class="top">
+                        <div class="heading">
+                            <h6>Shree Nootan Kelavani Mandal, Valsad</h6>
+                        </div>
+                        <div class="heading-logo">
+                            <img src="download.png">
+                            <h3 style="color: blue;">Shah N H Commerce<br>College</h3>
+                        </div>
+                        <hr>    
+                   </div>
+                    
+                    <div class="bottom">
+                        <h4 class="roll-no">130860116027</h4>
+                        <img class="profile-image" src="download.png">
+                     <div class="deatil">
+                         <table class="table">
+                             <tr>
+                                <td>Name:</td> 
+                             <td>Hardik Mistry</td>
+                            </tr>
+                            <tr>
+                                <td>DOB:</td> 
+                             <td>15-Nov-1995</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile:</td> 
+                             <td>8780048700</td>
+                            </tr>
+                            <tr>
+                                <td>Roll No:</td> 
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>Aadhar No:</td> 
+                                <td class="Aadhar">    807818237081</td>
+                            </tr>
+                         </table>
+
+                     </div>
+                     <div class="footer">
+                        <img class="signature" src="download.png">
+                        <div class="designation">
+                        <h5 style="padding-left: 3.1rem;">Principal</h5> 
+                        <h5>(Dr.Girishkumar Rana)</h5>
+                        </div>
+
+
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <button  onclick="printDiv('back-printing')" class="front-button">back</button>
+            <div id="back-printing" class="back-printing">
+                <div id="back"class="back">
+                    <div class="barcode">
+                        <img src="qr sample.png">
+                        <hr style="width:50%;margin:0 auto;padding-top:1px;">
+                    </div>
+                    <!-- <hr class="hr"> -->
+                    <div class="details-info">
+                        <table class="back-table">
+                            <tr>
+                                <td><h4>Address:</h4></td>
+                                <td><h4>C/101, Vinayak Krupa Appt,Mullawadi, Valsad.396001</h4></td>
+                            </tr>
+                            <tr>
+                                <td><img class="back-logo" src="download.png"></img></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <h4 style="margin-top: 1rem;padding-left: 1rem;">If lost and found please return to the nearest police station </h4>
+                        <h4 style="margin-top: 2rem;padding-left: 2rem;">Shah N H Commerce College</h4>
+                        <h6 style="margin-top: 1rem;padding-left: 1rem;">College Sanskar Hall Valsad College Rd,Pall Hill, </h6>
+                        <h6 style="margin-top: 0.2rem;padding-left: 5rem;">Valsad Gujrat 396001</h6>
+                        <!-- <hr> -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+        
+</body>
+
+
+</html>
