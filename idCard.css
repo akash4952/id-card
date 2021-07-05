@@ -248,6 +248,20 @@ width: 132px;
     margin: 0px 55px;
 }
 
+@media print {
+    /* @page {
+        size: landscape
+    } */
+    #front-top {
+        transform: rotateZ(90deg);
+        margin-left: 20%;
+    }
+
+    #back {
+        transform: rotateZ(90deg);
+        margin-left: 20%;
+    }
+}
 
 @media screen and (max-width:400px)
 {
